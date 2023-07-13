@@ -142,6 +142,7 @@
 
 //==================1==========================
 // 1. lorem ipsum dolor sit amet => LoremIpsumDolorSitAmet
+// Cпособ 1
 // function chekString(str){
 //     str = str[0].toUpperCase() + str.slice(1)
 //     let space = str.indexOf(' ')
@@ -154,6 +155,32 @@
 //     str = str.slice(str[0], space+1) + str[space+1].toUpperCase() + str.slice(space+2)
 //     str = str.replaceAll(' ', '')
 //     return str
+// }
+//
+// console.log(chekString('lorem ipsum dolor sit amet'))
+
+// CПОСОБ 2
+// function chekString(str) {
+//     let string = '';
+//     let word = str[0].toUpperCase() + str.slice(1, str.indexOf(' '))
+//     string = string + word
+//     str = str.slice(str.indexOf(' ') + 1)
+//
+//     word = str[0].toUpperCase() + str.slice(1, str.indexOf(' '))
+//     string = string + word
+//     str = str.slice(str.indexOf(' ') + 1)
+//
+//     word = str[0].toUpperCase() + str.slice(1, str.indexOf(' '))
+//     string = string + word
+//     str = str.slice(str.indexOf(' ') + 1)
+//
+//     word = str[0].toUpperCase() + str.slice(1, str.indexOf(' '))
+//     string = string + word
+//     str = str.slice(str.indexOf(' ') + 1)
+//
+//     word = str[0].toUpperCase() + str.slice(1)
+//     string = string + word
+//     return string
 // }
 //
 // console.log(chekString('lorem ipsum dolor sit amet'))
@@ -183,33 +210,34 @@
 // str в задаче вам надо проверить что это строка.
 // вы проверяете не пустая ли она. длина мин 4 макс 10. четность длины.
 
-function chekStr(str){
-        if (typeof str === 'string'){
-            if (str !== ''){
-                if (str.length >=4){
-                    if (str.length <= 10){
-                        if (str.length % 2 === 0){
-                            return 'Длина строки четная'
-                        }
-                        else {
-                            return 'Длина строки не четная'
-                        }
-                    }
-                    else {
-                        return 'Длина должна быть меньше 10 символов'
-                    }
-                }
-                else {
-                    return 'Длина должна быть больше 4 символов'
-                }
-            }
-            else {
-                return 'У вас пустая строка'
-            }
-        }
-        else {
-            return 'Вы ввели не строчное значение'
-        }
-}
+// function chekStr(str){
+//         if (typeof str === 'string'){
+//             if (str !== ''){
+//                 if (str.length >=4){
+//                     if (str.length <= 10){
+//                         if (str.length % 2 === 0){
+//                             return 'Длина строки четная'
+//                         }
+//                         else {
+//                             return 'Длина строки не четная'
+//                         }
+//                     }
+//                     else {
+//                         return 'Длина должна быть меньше 10 символов'
+//                     }
+//                 }
+//                 else {
+//                     return 'Длина должна быть больше 4 символов'
+//                 }
+//             }
+//             else {
+//                 return 'У вас пустая строка'
+//             }
+//         }
+//         else {
+//             return 'Вы ввели не строчное значение'
+//         }
+// }
+//
+// console.log(chekStr('sadsdas'))
 
-console.log(chekStr('sadsdas'))
