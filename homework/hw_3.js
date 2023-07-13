@@ -136,4 +136,80 @@
 //     }
 // }
 //
-// console.log(chekDay(7))
+// console.log(chekDay(7)),
+
+//=============HOMEWORK_13_07==================
+
+//==================1==========================
+// 1. lorem ipsum dolor sit amet => LoremIpsumDolorSitAmet
+// function chekString(str){
+//     str = str[0].toUpperCase() + str.slice(1)
+//     let space = str.indexOf(' ')
+//     str = str.slice(str[0], space+1) + str[space+1].toUpperCase() + str.slice(str.indexOf(' ')+2)
+//     space = str.indexOf(' ',space+1)
+//     str = str.slice(str[0], space+1) + str[space+1].toUpperCase() + str.slice(space+2)
+//     space = str.indexOf(' ',space+1)
+//     str = str.slice(str[0], space+1) + str[space+1].toUpperCase() + str.slice(space+2)
+//     space = str.indexOf(' ',space+1)
+//     str = str.slice(str[0], space+1) + str[space+1].toUpperCase() + str.slice(space+2)
+//     str = str.replaceAll(' ', '')
+//     return str
+// }
+//
+// console.log(chekString('lorem ipsum dolor sit amet'))
+
+//===================2=====================
+//price и discount
+// function chekDiscount(price, discount){
+//     if (price,discount){
+//         if (price > 0 ){
+//             let pricedis = (price * discount) / 100 ;
+//             price = price - pricedis;
+//             return 'Цена после скидки: ' + price;
+//         }
+//         else {
+//             return 'Цена должна быть больше 0';
+//         }
+//     }
+//     else {
+//         return 'Введите значения';
+//     }
+// }
+//
+// console.log(chekDiscount(100, 13))
+
+//===================3=====================
+
+// str в задаче вам надо проверить что это строка.
+// вы проверяете не пустая ли она. длина мин 4 макс 10. четность длины.
+
+function chekStr(str){
+        if (typeof str === 'string'){
+            if (str !== ''){
+                if (str.length >=4){
+                    if (str.length <= 10){
+                        if (str.length % 2 === 0){
+                            return 'Длина строки четная'
+                        }
+                        else {
+                            return 'Длина строки не четная'
+                        }
+                    }
+                    else {
+                        return 'Длина должна быть меньше 10 символов'
+                    }
+                }
+                else {
+                    return 'Длина должна быть больше 4 символов'
+                }
+            }
+            else {
+                return 'У вас пустая строка'
+            }
+        }
+        else {
+            return 'Вы ввели не строчное значение'
+        }
+}
+
+console.log(chekStr('sadsdas'))
