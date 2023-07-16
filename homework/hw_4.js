@@ -158,7 +158,18 @@
 // ['null', undefined, 0, false, true, ''] => [0, false, true, 'null', undefined, '']
 
 // function writeBoolean(arr){
-//     return arr.filter(el => )
+//     return arr.filter(el => typeof el === 'number' || typeof el === 'boolean')
+// }
+//
+// console.log(writeBoolean(['null', undefined, 0, false, true, '']))
+
+// ================================================
+
+// function writeBoolean(arr){
+//     arr1 = []
+//     arr.filter(el => (typeof el === 'number' || typeof el === 'boolean') ? arr1.push(el) : el)
+//     arr.map(el => (typeof el !== 'number' && typeof el !== 'boolean') ? arr1.push(el) : el)
+//     return arr1
 // }
 //
 // console.log(writeBoolean(['null', undefined, 0, false, true, '']))
