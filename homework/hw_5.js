@@ -100,3 +100,27 @@
 //
 // console.log(arrPush([2, 3, 4, 5], 'hello world'))
 
+
+
+// const arr = n => {
+//     let array = new Array(n).fill(1)
+//     return array.map((el, index) => el + index).reverse()
+// }
+//
+// console.log(arr(99))
+
+// const polindrom = str => {
+//     let pol = ''
+//     if (typeof str === 'string'){
+//         pol = str.split('').reverse().join('')
+//     }else {
+//         str = str.toString()
+//         pol = str.split('').reverse().join('')
+//     }
+//     return str === pol ? true : false
+//
+// }
+//
+// console.log(polindrom(12321))
+
+
