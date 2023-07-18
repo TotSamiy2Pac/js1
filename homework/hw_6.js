@@ -107,6 +107,13 @@ const cars = [
         price: 30000
     },
     {
+        make: "Ford",
+        model: "F-150",
+        year: 2023,
+        color: "blue",
+        price: 75000
+    },
+    {
         make: "Tesla",
         model: "Model S",
         year: 2018,
@@ -156,8 +163,8 @@ const cars = [
 //
 // console.log(fillObj(cars))
 
-// const fillObj = (cars, marka) => {
-//     return cars.filter(el => el.price >= 40000  && el.make.toLowerCase() === marka.toLowerCase())
-// }
-//
-// console.log(fillObj(cars, 'ford'))
+const fillObj = (cars, marka) => {
+    return cars.filter(el => el.price >= 40000  && el.make.toLowerCase() === marka.toLowerCase())
+}
+
+console.log(fillObj(cars, 'ford'))
