@@ -54,6 +54,10 @@
 // const spliceArr = (arr) => {
 //     return [...arr.splice(0, arr.indexOf(2)), ...arr.splice(arr.indexOf(3))]
 // }
+
+const spliceArr = (arr) => {
+    return [...arr.splice(0,2) ]
+}
 //
 // console.log(spliceArr([1, 4, 3, 4, 5]))
 
@@ -163,8 +167,10 @@ const cars = [
 //
 // console.log(fillObj(cars))
 
-const fillObj = (cars, marka) => {
-    return cars.filter(el => el.price >= 40000  && el.make.toLowerCase() === marka.toLowerCase())
-}
+// =============================================
 
-console.log(fillObj(cars, 'ford'))
+// const fillObj = (cars, marka) => {
+//     return cars.filter(el => el.price >= 40000  && el.make.toLowerCase() === marka.toLowerCase())
+// }
+//
+// console.log(fillObj(cars, 'ford'))
