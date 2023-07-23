@@ -4,7 +4,9 @@ const increaseBtn = document.querySelector('#Increase')
 const decreaseBtn = document.querySelector('#decrease')
 const resultSpan = document.querySelector('#asd')
 const multiplicationBtn = document.querySelector('#multiplication')
+
 const clearBtn = document.querySelector('#clear')
+
 const alertsWindow = document.querySelector('.alerts')
 const closeBtn = document.querySelector('#close')
 const oneBtn = document.querySelector('#oneBtn')
@@ -17,10 +19,11 @@ const qwe = document.querySelector('#qwe')
 const btn = document.querySelectorAll('.chisloBtn')
 
 
+
 let chislo = 1
-let chek = true
+// let chek = true
 const increase = () => {
-    if (Number(resultSpan.innerText) < 100){
+    if (parseInt(resultSpan.innerText) + chislo <= 100){
         resultSpan.innerText = parseInt(resultSpan.innerText) + chislo
     }
     else {
@@ -50,7 +53,9 @@ const multiplication = () => {
     }
 }
 
-
+const clear = () => {
+    resultSpan.innerText = 0
+}
 
 
 increaseBtn.addEventListener('click', (event) => {
@@ -67,6 +72,10 @@ closeBtn.addEventListener('click', (event) => {
 
 multiplicationBtn.addEventListener('click', (event) => {
     multiplication()
+})
+
+clearBtn.addEventListener('click', (event) => {
+    clear()
 })
 
 oneBtn.addEventListener('click', (event) => {
