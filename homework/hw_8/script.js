@@ -55,6 +55,7 @@ const multiplication = () => {
 
 const clear = () => {
     resultSpan.innerText = 0
+    qwe.innerText = 1
 }
 
 
