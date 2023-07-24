@@ -32,7 +32,7 @@ const increase = () => {
 }
 
 const decrease = () => {
-    if (Number(resultSpan.innerText) > 0){
+    if (parseInt(resultSpan.innerText) - chislo >= 0){
         resultSpan.innerText = parseInt(resultSpan.innerText) - chislo
     }
     else {
