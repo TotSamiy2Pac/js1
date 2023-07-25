@@ -42,6 +42,7 @@ const decrease = () => {
 
 const close = () => {
     alertsWindow.style.opacity = '0'
+    // alertsWindow.setAttribute('disabled', true)
 }
 
 const multiplication = () => {
